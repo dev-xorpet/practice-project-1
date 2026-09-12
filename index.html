@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon" />
     <title>رستوران بنفش</title>
-  </head> 
+  </head>
   <body>
-    <!-- <header class="header">
+    <header class="header" id="header">
         <nav class="navbar">
-            <a href="" class="nav-item">منو</a>
-            <a href="" class="nav-item">درباره ما</a>
-            <a href="" class="nav-item">نظرات</a>
-            <a href="" class="nav-item">تماس با ما</a>
+            <a href="#menu" class="nav-item">منو</a>
+            <a href="#about-us" class="nav-item">درباره ما</a>
+            <a href="#comments" class="nav-item">نظرات</a>
+            <a href="#footer" class="nav-item">تماس با ما</a>
         </nav>
        <img src="./images/banafsh-logo.png
        " alt="logo" class="logo">
         <a href="" class="button button-yellow" >رزرو میز انلاین</a>
-    </header> -->
+    </header>
     <main>
-      <!-- <section class="menu">
+      <section class="menu" id="menu">
         <h1>
           رستوران
           <span class="purple">بنفش</span>
@@ -65,8 +65,8 @@
             </figcaption>
           </figure>
         </div>
-     </section> -->
-      <!-- <section class="comments"> 
+     </section>
+      <section class="comments" id="comments"> 
         <h2>نظرات مشتریان <span class="purple">بنفش</span></h2>
         <div class="comment-items">
           <figure class="comment-item">
@@ -136,8 +136,8 @@
             </figcaption>
           </figure> 
         </div>
-      </section>-->
-      <!-- <section class="about-us">
+      </section>
+     <section class="about-us" id="about-us">
         <div class="about-us-text">
           <h2>درباره رستوران <span class="yellow">بنفش</span></h2>
           <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی</p>
@@ -147,10 +147,10 @@
           alt="رستوران بنفش"
           class="about-us-image"
         />
-      </section> -->
+      </section> 
     </main>
-    <footer class="footer">
-      <!-- <section class="contact-us">
+    <footer class="footer" id="footer">
+      <section class="contact-us">
         <h2>اطلاعات تماس</h2>
         <div class="contact-us-item">
           <h3 class="contact-us-title">
@@ -173,10 +173,39 @@
           </h3>
           <a href="tel:09123456789">09123456789</a>
         </div>
-      </section> -->
+      </section>
       <form action="" class="form">
         <h2>رزرو میز آنلاین</h2>
+        <input
+          type="text"
+          name="name"
+          class="input"
+          id="name"
+          placeholder="نام و نام خانوادگی"
+        />
+        <input
+          type="tel"
+          name="phone"
+          class="input"
+          id="phone"
+          placeholder="شماره تماس"
+          dir="rtl"
+        />
+        <select name="" class="input" id="">
+          <option value="">تعداد نفرات</option>
+          <option value="1">یک نفر</option>
+          <option value="2">دو نفر</option>
+        </select>
+        <select name="" class="input" id="">
+          <option value="">ساعت</option>
+          <option value="13">13:00</option>
+          <option value="14">14:00</option>
+        </select>
+        <input type="submit" value="ثبت درخواست" class="form-button" />
       </form>
     </footer>
+    <a href="#header" class="float">
+      <img src="./images/arrow.svg" alt="arrow">
+    </a>
   </body>
 </html>
