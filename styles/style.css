@@ -27,7 +27,6 @@ body {
   padding: 1rem 2rem;
   font-size: 3rem;
   font-weight: 600;
-  text-decoration: none;
   transition: 0.2s ease-in-out;
 }
 
@@ -68,6 +67,10 @@ p {
   font-size: 1.5rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Header */
 
 .header {
@@ -89,7 +92,6 @@ p {
 }
 
 .nav-item {
-  text-decoration: none;
   color: var(--white);
   background-color: var(--nav-button);
   margin: 0.5rem;
@@ -311,6 +313,47 @@ p {
   padding: 2rem;
   border-radius: 1rem;
 }
+
+/* contact us */
+
+ .contact-us-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+ }
+
+ .contact-us-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ }
+
+ .contact-us-title img {
+  width: 2rem;
+  margin-left: 0.5rem;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  padding: 0.5rem;
+ }
+
+ .contact-us-item a , .contact-us-item address {
+  color: var(--purple);
+  background-color: var(--yellow);
+  padding: 2rem;
+  width: 90%;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.2s ease-in-out;
+ }
+
+ .contact-us-item a:hover , .contact-us-item address:hover {
+  background-color: var(--purple);
+  color: var(--white);
+ }
 
 @media only screen and (max-width: 768px) {
   .footer {
